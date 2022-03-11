@@ -15,6 +15,7 @@ print(flag_k1_k3_k2_ord)
 flag_k1_ord = [o_f132 ^ o_f23 for(o_f132, o_f23) in zip(flag_k1_k3_k2_ord, k2_k3_ord)]
 
 flag_ord = [o_f1 ^ o1 for(o_f1, o1) in zip(flag_k1_ord, k1_ord)]
+print(flag_ord)
 flag = "".join(chr(o) for o in flag_ord)
 
 print("Flag: " + flag)
